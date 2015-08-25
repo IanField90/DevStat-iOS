@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		EC955D341B8CA3E700D33FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D331B8CA3E700D33FD2 /* main.m */; };
 		EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D361B8CA3E700D33FD2 /* AppDelegate.m */; };
-		EC955D3A1B8CA3E700D33FD2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D391B8CA3E700D33FD2 /* FirstViewController.m */; };
-		EC955D3D1B8CA3E700D33FD2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D3C1B8CA3E700D33FD2 /* SecondViewController.m */; };
 		EC955D401B8CA3E700D33FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */; };
 		EC955D421B8CA3E700D33FD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC955D411B8CA3E700D33FD2 /* Images.xcassets */; };
 		EC955D451B8CA3E700D33FD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC955D431B8CA3E700D33FD2 /* LaunchScreen.xib */; };
 		EC955D511B8CA3E700D33FD2 /* DevStatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D501B8CA3E700D33FD2 /* DevStatTests.m */; };
+		EC955D5C1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D5B1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m */; };
+		EC955D5F1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D5E1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m */; };
+		EC955D641B8CA55B00D33FD2 /* StatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D631B8CA55B00D33FD2 /* StatItem.m */; };
+		EC955D681B8CA5E600D33FD2 /* StatisticsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D671B8CA5E600D33FD2 /* StatisticsHelper.m */; };
+		EC955D6B1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D6A1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +36,22 @@
 		EC955D331B8CA3E700D33FD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC955D351B8CA3E700D33FD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC955D361B8CA3E700D33FD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC955D381B8CA3E700D33FD2 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		EC955D391B8CA3E700D33FD2 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		EC955D3B1B8CA3E700D33FD2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		EC955D3C1B8CA3E700D33FD2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		EC955D3F1B8CA3E700D33FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC955D411B8CA3E700D33FD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC955D441B8CA3E700D33FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EC955D4A1B8CA3E700D33FD2 /* DevStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC955D4F1B8CA3E700D33FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC955D501B8CA3E700D33FD2 /* DevStatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevStatTests.m; sourceTree = "<group>"; };
+		EC955D5A1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareStatisticsTableViewController.h; sourceTree = "<group>"; };
+		EC955D5B1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HardwareStatisticsTableViewController.m; sourceTree = "<group>"; };
+		EC955D5D1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareStatisticsTableViewController.h; sourceTree = "<group>"; };
+		EC955D5E1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareStatisticsTableViewController.m; sourceTree = "<group>"; };
+		EC955D621B8CA55B00D33FD2 /* StatItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatItem.h; sourceTree = "<group>"; };
+		EC955D631B8CA55B00D33FD2 /* StatItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatItem.m; sourceTree = "<group>"; };
+		EC955D661B8CA5E600D33FD2 /* StatisticsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsHelper.h; sourceTree = "<group>"; };
+		EC955D671B8CA5E600D33FD2 /* StatisticsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsHelper.m; sourceTree = "<group>"; };
+		EC955D691B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractStatisticsTableViewController.h; sourceTree = "<group>"; };
+		EC955D6A1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractStatisticsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +93,11 @@
 		EC955D301B8CA3E700D33FD2 /* DevStat */ = {
 			isa = PBXGroup;
 			children = (
+				EC955D651B8CA5CF00D33FD2 /* Helper */,
+				EC955D611B8CA53400D33FD2 /* View Controller */,
+				EC955D601B8CA52B00D33FD2 /* Model */,
 				EC955D351B8CA3E700D33FD2 /* AppDelegate.h */,
 				EC955D361B8CA3E700D33FD2 /* AppDelegate.m */,
-				EC955D381B8CA3E700D33FD2 /* FirstViewController.h */,
-				EC955D391B8CA3E700D33FD2 /* FirstViewController.m */,
-				EC955D3B1B8CA3E700D33FD2 /* SecondViewController.h */,
-				EC955D3C1B8CA3E700D33FD2 /* SecondViewController.m */,
 				EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */,
 				EC955D411B8CA3E700D33FD2 /* Images.xcassets */,
 				EC955D431B8CA3E700D33FD2 /* LaunchScreen.xib */,
@@ -122,6 +130,37 @@
 				EC955D4F1B8CA3E700D33FD2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC955D601B8CA52B00D33FD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC955D621B8CA55B00D33FD2 /* StatItem.h */,
+				EC955D631B8CA55B00D33FD2 /* StatItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EC955D611B8CA53400D33FD2 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC955D5A1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.h */,
+				EC955D5B1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m */,
+				EC955D5D1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.h */,
+				EC955D5E1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m */,
+				EC955D691B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.h */,
+				EC955D6A1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		EC955D651B8CA5CF00D33FD2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EC955D661B8CA5E600D33FD2 /* StatisticsHelper.h */,
+				EC955D671B8CA5E600D33FD2 /* StatisticsHelper.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC955D3D1B8CA3E700D33FD2 /* SecondViewController.m in Sources */,
+				EC955D5C1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m in Sources */,
 				EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */,
-				EC955D3A1B8CA3E700D33FD2 /* FirstViewController.m in Sources */,
+				EC955D681B8CA5E600D33FD2 /* StatisticsHelper.m in Sources */,
 				EC955D341B8CA3E700D33FD2 /* main.m in Sources */,
+				EC955D6B1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m in Sources */,
+				EC955D641B8CA55B00D33FD2 /* StatItem.m in Sources */,
+				EC955D5F1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
