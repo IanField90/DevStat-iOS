@@ -13,6 +13,8 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.27058823529411763" green="0.15294117647058825" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.27058823529999998" green="0.1529411765" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="uvV-PH-qMO" kind="relationship" relationship="viewControllers" id="ZcG-15-G5V"/>
@@ -58,7 +60,7 @@
                             <outlet property="delegate" destination="uvV-PH-qMO" id="b8W-Pf-eMf"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Hardware" id="Cuu-0E-Mlx"/>
+                    <tabBarItem key="tabBarItem" title="Hardware" image="first" id="Cuu-0E-Mlx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uc6-hh-OMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,11 +101,16 @@
                             <outlet property="delegate" destination="MwP-wR-Zkw" id="hJm-Q9-Euu"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Software" id="02Y-bb-bjG"/>
+                    <tabBarItem key="tabBarItem" title="Software" image="second" id="02Y-bb-bjG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exF-cq-QvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="810" y="486"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+    <color key="tintColor" red="0.27058823529999998" green="0.1529411765" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
