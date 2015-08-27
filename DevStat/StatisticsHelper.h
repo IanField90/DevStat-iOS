@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
+#import <CoreLocation/CoreLocation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @class StatItem;
 
@@ -22,11 +24,17 @@ enum HardwareStatItem : NSUInteger {
 
 enum SoftwareStatItem : NSUInteger {
     SSIOS,
-    SSIConnection
+    SSIConnection,
+    SSILocation,
+    SSIBluetooth
 };
 
 @interface StatisticsHelper : NSObject
 +(StatItem *) getHardware: (enum HardwareStatItem) item;
 +(StatItem *) getSoftware: (enum SoftwareStatItem) item;
+
+
+@property (nonatomic, retain) CBCentralManager *bluetoothManager;
++(StatisticsHelper *) sharedHelper;
 
 @end

@@ -7,7 +7,30 @@
 //
 
 #import "StatisticsHelper.h"
+
+@interface StatisticsHelper () <CBCentralManagerDelegate>
+    @property NSString *stateString;
+@end
+
 @implementation StatisticsHelper
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.bluetoothManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil options: @{CBCentralManagerOptionShowPowerAlertKey: @0}];
+    }
+    return self;
+}
+
++(StatisticsHelper *) sharedHelper {
+    static StatisticsHelper *sharedMyManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedMyManager = [[self alloc] init];
+    });
+    return sharedMyManager;
+}
 
 +(StatItem *) getHardware: (enum HardwareStatItem) item {
     StatItem *statItem = [[StatItem alloc] init];
@@ -77,12 +100,57 @@
             [reachability stopNotifier];
         }
             break;
+        case SSILocation:
+            statItem.title = @"Location services enabled";
+            if ([CLLocationManager locationServicesEnabled]) {
+                statItem.value = @"Yes";
+            } else {
+                statItem.value = @"No";
+            }
+            break;
+        case SSIBluetooth: {
+            statItem.title = @"Bluetooth";
+            statItem.value = self.sharedHelper.stateString == nil ? @"Fetching..." : self.sharedHelper.stateString;
+        }
+            break;
             
         default:
             break;
     }
     
     return statItem;
+}
+
+
+
+#pragma mark - CBCentralManagerDelegate
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+    // This delegate method will monitor for any changes in bluetooth state and respond accordingly
+    switch(_bluetoothManager.state)
+    {
+        case CBCentralManagerStatePoweredOn:
+            self.stateString = @"Powered on";
+            break;
+        case CBCentralManagerStatePoweredOff:
+            self.stateString = @"Powered off";
+            break;
+        case CBCentralManagerStateResetting:
+            self.stateString = @"Resetting";
+            break;
+        case CBCentralManagerStateUnsupported:
+            self.stateString = @"Unsupported";
+            break;
+        case CBCentralManagerStateUnauthorized:
+            self.stateString = @"Unauthorized";
+            break;
+            
+        default:
+            self.stateString = @"Unknown";
+            break;
+    }
+    NSLog(@"Bluetooth State: %@", self.stateString);
 }
 
 @end
