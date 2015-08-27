@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2F5D121B8F0E56003790F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2F5D111B8F0E56003790F1 /* Reachability.m */; };
 		EC955D341B8CA3E700D33FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D331B8CA3E700D33FD2 /* main.m */; };
 		EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D361B8CA3E700D33FD2 /* AppDelegate.m */; };
 		EC955D401B8CA3E700D33FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */; };
@@ -31,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC2F5D101B8F0E56003790F1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EC2F5D111B8F0E56003790F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EC955D2E1B8CA3E700D33FD2 /* DevStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC955D321B8CA3E700D33FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC955D331B8CA3E700D33FD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		EC955D251B8CA3E700D33FD2 = {
 			isa = PBXGroup;
 			children = (
+				EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */,
 				EC955D301B8CA3E700D33FD2 /* DevStat */,
 				EC955D4D1B8CA3E700D33FD2 /* DevStatTests */,
 				EC955D2F1B8CA3E700D33FD2 /* Products */,
@@ -98,6 +103,8 @@
 				EC955D601B8CA52B00D33FD2 /* Model */,
 				EC955D351B8CA3E700D33FD2 /* AppDelegate.h */,
 				EC955D361B8CA3E700D33FD2 /* AppDelegate.m */,
+				EC2F5D101B8F0E56003790F1 /* Reachability.h */,
+				EC2F5D111B8F0E56003790F1 /* Reachability.m */,
 				EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */,
 				EC955D411B8CA3E700D33FD2 /* Images.xcassets */,
 				EC955D431B8CA3E700D33FD2 /* LaunchScreen.xib */,
@@ -265,6 +272,7 @@
 			files = (
 				EC955D5C1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m in Sources */,
 				EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */,
+				EC2F5D121B8F0E56003790F1 /* Reachability.m in Sources */,
 				EC955D681B8CA5E600D33FD2 /* StatisticsHelper.m in Sources */,
 				EC955D341B8CA3E700D33FD2 /* main.m in Sources */,
 				EC955D6B1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m in Sources */,
@@ -464,6 +472,7 @@
 				EC955D561B8CA3E700D33FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC955D571B8CA3E700D33FD2 /* Build configuration list for PBXNativeTarget "DevStatTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +481,7 @@
 				EC955D591B8CA3E700D33FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

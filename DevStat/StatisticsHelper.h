@@ -5,16 +5,24 @@
 //  Created by Ian Field on 25/08/2015.
 //  Copyright (c) 2015 Ian Field. All rights reserved.
 //
-
+#import "StatisticsHelper.h"
+#import "StatItem.h"
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Reachability.h"
+
 @class StatItem;
 
 enum HardwareStatItem : NSUInteger {
-    HSIModel = 1
+    HSIModel,
+    HSIScreenWidth,
+    HSIScreenHeight,
+    HSIScale
 };
 
 enum SoftwareStatItem : NSUInteger {
-    SSIOS = 1
+    SSIOS,
+    SSIConnection
 };
 
 @interface StatisticsHelper : NSObject

@@ -16,12 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    // TODO populate the list items
-    StatItem *model = [StatisticsHelper getSoftware: SSIOS];
-    
-    [self.statistics addObject:model];
+    [self.statistics addObject: [StatisticsHelper getSoftware: SSIOS]];
+    [self.statistics addObject: [StatisticsHelper getSoftware: SSIConnection]];
 }
 
 @end
