@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C7707F5A3C544B61BA402EE /* libPods-DevStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */; };
+		EC0D13E51B9DC8B900E70747 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */; };
 		EC955D341B8CA3E700D33FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D331B8CA3E700D33FD2 /* main.m */; };
 		EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D361B8CA3E700D33FD2 /* AppDelegate.m */; };
 		EC955D401B8CA3E700D33FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */; };
@@ -37,6 +38,9 @@
 		18F473DD7F28A40983D96AA3 /* Pods-DevStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevStat/Pods-DevStat.release.xcconfig"; sourceTree = "<group>"; };
 		7E7E53062208BFBA2E1DB279 /* Pods-DevStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevStat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevStat/Pods-DevStat.debug.xcconfig"; sourceTree = "<group>"; };
 		B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevStat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0D13E31B9DC8B900E70747 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		EC0D13E61B9DCC0000E70747 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EC955D2E1B8CA3E700D33FD2 /* DevStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC955D321B8CA3E700D33FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				EC955D411B8CA3E700D33FD2 /* Images.xcassets */,
 				EC955D431B8CA3E700D33FD2 /* LaunchScreen.xib */,
 				EC955D311B8CA3E700D33FD2 /* Supporting Files */,
+				EC0D13E61B9DCC0000E70747 /* Constants.h */,
 			);
 			path = DevStat;
 			sourceTree = "<group>";
@@ -184,6 +189,8 @@
 				EC955D5E1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m */,
 				EC955D691B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.h */,
 				EC955D6A1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m */,
+				EC0D13E31B9DC8B900E70747 /* CustomTabBarController.h */,
+				EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -338,6 +345,7 @@
 				EC955D341B8CA3E700D33FD2 /* main.m in Sources */,
 				EC955D6B1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m in Sources */,
 				EC955D641B8CA55B00D33FD2 /* StatItem.m in Sources */,
+				EC0D13E51B9DC8B900E70747 /* CustomTabBarController.m in Sources */,
 				EC955D5F1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
