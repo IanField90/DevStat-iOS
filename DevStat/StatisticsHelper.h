@@ -12,6 +12,7 @@
 #import <Reachability/Reachability.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreMotion/CoreMotion.h>
 
 @class StatItem;
 
@@ -19,7 +20,9 @@ enum HardwareStatItem : NSUInteger {
     HSIModel,
     HSIScreenWidth,
     HSIScreenHeight,
-    HSIScale
+    HSIScale,
+    HSIAccelerometer,
+    HSIGyro
 };
 
 enum SoftwareStatItem : NSUInteger {
@@ -32,7 +35,12 @@ enum SoftwareStatItem : NSUInteger {
 
 @interface StatisticsHelper : NSObject
 
-@property (nonatomic, retain) CBCentralManager *bluetoothManager;
+@property (nonatomic, retain) CMMotionManager *motionManager;
+
+@property NSString *bluetoothState;
+@property NSString *accelerometerState;
+@property NSString *gyroState;
+@property NSString *deviceMotionState;
 
 + (StatItem *)getHardware:(enum HardwareStatItem)item;
 + (StatItem *)getSoftware:(enum SoftwareStatItem)item;
