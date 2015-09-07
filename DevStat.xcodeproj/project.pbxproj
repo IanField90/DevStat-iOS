@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7C7707F5A3C544B61BA402EE /* libPods-DevStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */; };
-		EC0D13E51B9DC8B900E70747 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */; };
 		D97E738F1B9DC72B006015E8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97E738E1B9DC72B006015E8 /* CoreMotion.framework */; };
+		EC0D13E51B9DC8B900E70747 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */; };
+		EC3837851B9DD67A00EBD40F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3837841B9DD67A00EBD40F /* MessageUI.framework */; };
 		EC955D341B8CA3E700D33FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D331B8CA3E700D33FD2 /* main.m */; };
 		EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D361B8CA3E700D33FD2 /* AppDelegate.m */; };
 		EC955D401B8CA3E700D33FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */; };
@@ -39,11 +40,12 @@
 		18F473DD7F28A40983D96AA3 /* Pods-DevStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevStat/Pods-DevStat.release.xcconfig"; sourceTree = "<group>"; };
 		7E7E53062208BFBA2E1DB279 /* Pods-DevStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevStat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevStat/Pods-DevStat.debug.xcconfig"; sourceTree = "<group>"; };
 		B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevStat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97E738E1B9DC72B006015E8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		EC0D13E31B9DC8B900E70747 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 		EC0D13E61B9DCC0000E70747 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		D97E738E1B9DC72B006015E8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC3837841B9DD67A00EBD40F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EC955D2E1B8CA3E700D33FD2 /* DevStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC955D321B8CA3E700D33FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC955D331B8CA3E700D33FD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3837851B9DD67A00EBD40F /* MessageUI.framework in Frameworks */,
 				D97E738F1B9DC72B006015E8 /* CoreMotion.framework in Frameworks */,
 				ECCB665F1B8F428300E14970 /* CoreBluetooth.framework in Frameworks */,
 				ECCB665D1B8F40E200E14970 /* CoreLocation.framework in Frameworks */,
@@ -94,6 +97,7 @@
 		B23398F93FB78FA56264D040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC3837841B9DD67A00EBD40F /* MessageUI.framework */,
 				D97E738E1B9DC72B006015E8 /* CoreMotion.framework */,
 				ECCB665E1B8F428300E14970 /* CoreBluetooth.framework */,
 				ECCB665C1B8F40E200E14970 /* CoreLocation.framework */,

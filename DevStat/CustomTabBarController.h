@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface CustomTabBarController : UITabBarController
+@interface CustomTabBarController : UITabBarController <MFMailComposeViewControllerDelegate>
 
 @end
