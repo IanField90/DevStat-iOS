@@ -29,12 +29,14 @@ enum SoftwareStatItem : NSUInteger {
     SSIBluetooth
 };
 
-@interface StatisticsHelper : NSObject
-+(StatItem *) getHardware: (enum HardwareStatItem) item;
-+(StatItem *) getSoftware: (enum SoftwareStatItem) item;
 
+@interface StatisticsHelper : NSObject
 
 @property (nonatomic, retain) CBCentralManager *bluetoothManager;
-+(StatisticsHelper *) sharedHelper;
+
++ (StatItem *)getHardware:(enum HardwareStatItem)item;
++ (StatItem *)getSoftware:(enum SoftwareStatItem)item;
+
++ (StatisticsHelper *)sharedHelper;
 
 @end

@@ -23,7 +23,8 @@
     return self;
 }
 
-+(StatisticsHelper *) sharedHelper {
++ (StatisticsHelper *)sharedHelper
+{
     static StatisticsHelper *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -32,12 +33,12 @@
     return sharedMyManager;
 }
 
-+(StatItem *) getHardware: (enum HardwareStatItem) item {
++ (StatItem *)getHardware:(enum HardwareStatItem)item
+{
     StatItem *statItem = [[StatItem alloc] init];
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
 
-    
     switch (item) {
         case HSIModel:
             statItem.title = @"Model";
@@ -65,8 +66,8 @@
     return statItem;
 }
 
-
-+(StatItem *) getSoftware: (enum SoftwareStatItem) item {
++ (StatItem *)getSoftware:(enum SoftwareStatItem)item
+{
     StatItem *statItem = [[StatItem alloc] init];
     
     switch (item) {
@@ -82,19 +83,14 @@
 
             NetworkStatus status = [reachability currentReachabilityStatus];
             
-            if(status == NotReachable)
-            {
-                //No internet
+            if (status == NotReachable) {
+                // No internet
                 statItem.value = @"Network not reachable";
-            }
-            else if (status == ReachableViaWiFi)
-            {
-                //WiFi
+            } else if (status == ReachableViaWiFi) {
+                // WiFi
                 statItem.value = @"WiFi";
-            }
-            else if (status == ReachableViaWWAN) 
-            {
-                //3G
+            } else if (status == ReachableViaWWAN)  {
+                // 3G
                 statItem.value = @"Mobile";
             }
             [reachability stopNotifier];
