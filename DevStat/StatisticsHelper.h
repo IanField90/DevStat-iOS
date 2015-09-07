@@ -9,7 +9,7 @@
 #import "StatItem.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "Reachability.h"
+#import <Reachability/Reachability.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 

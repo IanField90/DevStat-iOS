@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC2F5D121B8F0E56003790F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2F5D111B8F0E56003790F1 /* Reachability.m */; };
+		7C7707F5A3C544B61BA402EE /* libPods-DevStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */; };
 		EC955D341B8CA3E700D33FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D331B8CA3E700D33FD2 /* main.m */; };
 		EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D361B8CA3E700D33FD2 /* AppDelegate.m */; };
 		EC955D401B8CA3E700D33FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */; };
@@ -34,9 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18F473DD7F28A40983D96AA3 /* Pods-DevStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevStat/Pods-DevStat.release.xcconfig"; sourceTree = "<group>"; };
+		7E7E53062208BFBA2E1DB279 /* Pods-DevStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevStat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevStat/Pods-DevStat.debug.xcconfig"; sourceTree = "<group>"; };
+		B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevStat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		EC2F5D101B8F0E56003790F1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		EC2F5D111B8F0E56003790F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EC955D2E1B8CA3E700D33FD2 /* DevStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC955D321B8CA3E700D33FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC955D331B8CA3E700D33FD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 			files = (
 				ECCB665F1B8F428300E14970 /* CoreBluetooth.framework in Frameworks */,
 				ECCB665D1B8F40E200E14970 /* CoreLocation.framework in Frameworks */,
+				7C7707F5A3C544B61BA402EE /* libPods-DevStat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B23398F93FB78FA56264D040 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC4FC57F75C101287EFECC8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E53062208BFBA2E1DB279 /* Pods-DevStat.debug.xcconfig */,
+				18F473DD7F28A40983D96AA3 /* Pods-DevStat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC955D251B8CA3E700D33FD2 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +110,8 @@
 				EC955D301B8CA3E700D33FD2 /* DevStat */,
 				EC955D4D1B8CA3E700D33FD2 /* DevStatTests */,
 				EC955D2F1B8CA3E700D33FD2 /* Products */,
+				CC4FC57F75C101287EFECC8C /* Pods */,
+				B23398F93FB78FA56264D040 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +132,6 @@
 				EC955D601B8CA52B00D33FD2 /* Model */,
 				EC955D351B8CA3E700D33FD2 /* AppDelegate.h */,
 				EC955D361B8CA3E700D33FD2 /* AppDelegate.m */,
-				EC2F5D101B8F0E56003790F1 /* Reachability.h */,
-				EC2F5D111B8F0E56003790F1 /* Reachability.m */,
 				EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */,
 				EC955D411B8CA3E700D33FD2 /* Images.xcassets */,
 				EC955D431B8CA3E700D33FD2 /* LaunchScreen.xib */,
@@ -185,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC955D541B8CA3E700D33FD2 /* Build configuration list for PBXNativeTarget "DevStat" */;
 			buildPhases = (
+				BE0224A25B2B87F9090CE083 /* Check Pods Manifest.lock */,
 				EC955D2A1B8CA3E700D33FD2 /* Sources */,
 				EC955D2B1B8CA3E700D33FD2 /* Frameworks */,
 				EC955D2C1B8CA3E700D33FD2 /* Resources */,
+				19099431D747D742C1DC1BDD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +294,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19099431D747D742C1DC1BDD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DevStat/Pods-DevStat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0224A25B2B87F9090CE083 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC955D2A1B8CA3E700D33FD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,7 +334,6 @@
 			files = (
 				EC955D5C1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.m in Sources */,
 				EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */,
-				EC2F5D121B8F0E56003790F1 /* Reachability.m in Sources */,
 				EC955D681B8CA5E600D33FD2 /* StatisticsHelper.m in Sources */,
 				EC955D341B8CA3E700D33FD2 /* main.m in Sources */,
 				EC955D6B1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m in Sources */,
@@ -409,6 +462,7 @@
 		};
 		EC955D551B8CA3E700D33FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7E53062208BFBA2E1DB279 /* Pods-DevStat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevStat/Info.plist;
@@ -419,6 +473,7 @@
 		};
 		EC955D561B8CA3E700D33FD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F473DD7F28A40983D96AA3 /* Pods-DevStat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DevStat/Info.plist;
