@@ -22,8 +22,8 @@
     [self.statistics addObject:[StatisticsHelper getHardware:HSIScreenWidth]];
     [self.statistics addObject:[StatisticsHelper getHardware:HSIScreenHeight]];
     [self.statistics addObject:[StatisticsHelper getHardware:HSIScale]];
+    [self.statistics addObject:[StatisticsHelper getHardware:HSIAccelerometer]];
+    [self.statistics addObject:[StatisticsHelper getHardware:HSIGyro]];
 }
-
-
 
 @end
