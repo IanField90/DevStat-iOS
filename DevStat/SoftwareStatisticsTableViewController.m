@@ -14,21 +14,24 @@
 
 @implementation SoftwareStatisticsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self setupStatistics];
     [self reload];
 }
 
-- (void) setupStatistics {
+- (void)setupStatistics
+{
     [self.statistics removeAllObjects];
-    [self.statistics addObject: [StatisticsHelper getSoftware: SSIOS]];
-    [self.statistics addObject: [StatisticsHelper getSoftware: SSIConnection]];
-    [self.statistics addObject: [StatisticsHelper getSoftware: SSILocation]];
-    [self.statistics addObject: [StatisticsHelper getSoftware: SSIBluetooth]];
+    [self.statistics addObject:[StatisticsHelper getSoftware:SSIOS]];
+    [self.statistics addObject:[StatisticsHelper getSoftware:SSIConnection]];
+    [self.statistics addObject:[StatisticsHelper getSoftware:SSILocation]];
+    [self.statistics addObject:[StatisticsHelper getSoftware:SSIBluetooth]];
 }
 
-- (void) reload {
+- (void)reload
+{
     [self setupStatistics];
     [self.tableView reloadData];
 
@@ -37,7 +40,6 @@
     if ([bluetooth.value isEqualToString:@"Fetching..."]) {
         [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(reload) userInfo:nil repeats: NO];
     }
-
 }
 
 @end

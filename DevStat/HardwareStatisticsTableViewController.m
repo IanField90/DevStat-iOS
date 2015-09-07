@@ -14,7 +14,8 @@
 
 @implementation HardwareStatisticsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self.statistics addObject:[StatisticsHelper getHardware:HSIModel]];

@@ -87,6 +87,9 @@
 		B23398F93FB78FA56264D040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECCB665E1B8F428300E14970 /* CoreBluetooth.framework */,
+				ECCB665C1B8F40E200E14970 /* CoreLocation.framework */,
+				EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */,
 				B21F58F7B3FD49C6F4E1EEE9 /* libPods-DevStat.a */,
 			);
 			name = Frameworks;
@@ -104,9 +107,6 @@
 		EC955D251B8CA3E700D33FD2 = {
 			isa = PBXGroup;
 			children = (
-				ECCB665E1B8F428300E14970 /* CoreBluetooth.framework */,
-				ECCB665C1B8F40E200E14970 /* CoreLocation.framework */,
-				EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */,
 				EC955D301B8CA3E700D33FD2 /* DevStat */,
 				EC955D4D1B8CA3E700D33FD2 /* DevStatTests */,
 				EC955D2F1B8CA3E700D33FD2 /* Products */,
@@ -127,9 +127,9 @@
 		EC955D301B8CA3E700D33FD2 /* DevStat */ = {
 			isa = PBXGroup;
 			children = (
-				EC955D651B8CA5CF00D33FD2 /* Helper */,
-				EC955D611B8CA53400D33FD2 /* View Controller */,
-				EC955D601B8CA52B00D33FD2 /* Model */,
+				EC955D651B8CA5CF00D33FD2 /* Helpers */,
+				EC955D611B8CA53400D33FD2 /* View Controllers */,
+				EC955D601B8CA52B00D33FD2 /* Models */,
 				EC955D351B8CA3E700D33FD2 /* AppDelegate.h */,
 				EC955D361B8CA3E700D33FD2 /* AppDelegate.m */,
 				EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */,
@@ -166,16 +166,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC955D601B8CA52B00D33FD2 /* Model */ = {
+		EC955D601B8CA52B00D33FD2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				EC955D621B8CA55B00D33FD2 /* StatItem.h */,
 				EC955D631B8CA55B00D33FD2 /* StatItem.m */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		EC955D611B8CA53400D33FD2 /* View Controller */ = {
+		EC955D611B8CA53400D33FD2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EC955D5A1B8CA47700D33FD2 /* HardwareStatisticsTableViewController.h */,
@@ -185,16 +185,16 @@
 				EC955D691B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.h */,
 				EC955D6A1B8CABDF00D33FD2 /* AbstractStatisticsTableViewController.m */,
 			);
-			name = "View Controller";
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		EC955D651B8CA5CF00D33FD2 /* Helper */ = {
+		EC955D651B8CA5CF00D33FD2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				EC955D661B8CA5E600D33FD2 /* StatisticsHelper.h */,
 				EC955D671B8CA5E600D33FD2 /* StatisticsHelper.m */,
 			);
-			name = Helper;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
