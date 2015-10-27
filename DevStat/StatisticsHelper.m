@@ -81,7 +81,22 @@
 //            statItem.value = self.sharedHelper.motionManager.deviceMotionAvailable ? @"Yes" : @"No";
 //            break;
             
-            
+        case HSIForceTouch: {
+                statItem.title = @"Force Touch";
+                UIView *view = [UIApplication sharedApplication].keyWindow.rootViewController.view;
+                switch (view.traitCollection.forceTouchCapability) {
+                    case UIForceTouchCapabilityAvailable:
+                        statItem.value = @"Available";
+                        break;
+                    case UIForceTouchCapabilityUnavailable:
+                        statItem.value = @"Unavailable";
+                        break;
+                    case UIForceTouchCapabilityUnknown:
+                        statItem.value = @"Unknown";
+                        break;
+                }
+            }
+            break;
         default:
             break;
     }

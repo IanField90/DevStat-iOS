@@ -22,7 +22,8 @@ enum HardwareStatItem : NSUInteger {
     HSIScreenHeight,
     HSIScale,
     HSIAccelerometer,
-    HSIGyro
+    HSIGyro,
+    HSIForceTouch
 };
 
 enum SoftwareStatItem : NSUInteger {
