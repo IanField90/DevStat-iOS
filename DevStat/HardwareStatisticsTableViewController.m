@@ -24,6 +24,7 @@
     [self.statistics addObject:[StatisticsHelper getHardware:HSIScale]];
     [self.statistics addObject:[StatisticsHelper getHardware:HSIAccelerometer]];
     [self.statistics addObject:[StatisticsHelper getHardware:HSIGyro]];
+    [self.statistics addObject:[StatisticsHelper getHardware:HSIForceTouch]];
 }
 
 @end
