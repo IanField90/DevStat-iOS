@@ -49,4 +49,26 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    return (action == @selector(copy:));
+}
+
+- (void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    if (action == @selector(copy:))
+    {
+        
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        NSString *value = [NSString stringWithFormat:@"%@: %@", [cell.textLabel.text copy], [cell.detailTextLabel.text copy]];
+        NSLog(@"%@ copied!", value);
+        [UIPasteboard generalPasteboard].string = value;
+    }
+}
+
 @end
