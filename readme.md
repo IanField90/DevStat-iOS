@@ -4,7 +4,7 @@
 
 Now that it appears that device fragmentation is growing on iOS devices I intend to replicate a similar approach as the Android version for iOS
 
-## Items so far
+## Statistics
 
 ### Hardware
 - Model
