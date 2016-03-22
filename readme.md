@@ -2,7 +2,24 @@
 
 ![Icon](https://raw.githubusercontent.com/IanField90/DevStat-iOS/master/icon.png)
 
-Seeing what I can do for this platform now that fragmentation is apparent.
+Now that it appears that device fragmentation is growing on iOS devices I intend to replicate a similar approach as the Android version for iOS
+
+## Statistics
+
+### Hardware
+- Model
+- Screen Width
+- Screen Height
+- Scale
+- Accelerometer
+- Gyro
+- Force Touch
+
+### Software
+- OS
+- Connectivity
+- Location services enabled
+- Bluetooth
 
 ![App image](https://raw.githubusercontent.com/IanField90/DevStat-iOS/master/screenshot.png)
 
