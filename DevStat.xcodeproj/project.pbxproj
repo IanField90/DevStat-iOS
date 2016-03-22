@@ -11,6 +11,7 @@
 		D97E738F1B9DC72B006015E8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97E738E1B9DC72B006015E8 /* CoreMotion.framework */; };
 		EC0D13E51B9DC8B900E70747 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */; };
 		EC3837851B9DD67A00EBD40F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3837841B9DD67A00EBD40F /* MessageUI.framework */; };
+		EC735A611CA17B8300D59481 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC735A601CA17B8300D59481 /* Constants.swift */; };
 		EC955D341B8CA3E700D33FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D331B8CA3E700D33FD2 /* main.m */; };
 		EC955D371B8CA3E700D33FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC955D361B8CA3E700D33FD2 /* AppDelegate.m */; };
 		EC955D401B8CA3E700D33FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC955D3E1B8CA3E700D33FD2 /* Main.storyboard */; };
@@ -43,9 +44,10 @@
 		D97E738E1B9DC72B006015E8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		EC0D13E31B9DC8B900E70747 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		EC0D13E41B9DC8B900E70747 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
-		EC0D13E61B9DCC0000E70747 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		EC2F5D0E1B8F0D20003790F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EC3837841B9DD67A00EBD40F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EC735A5F1CA17B8300D59481 /* DevStat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevStat-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC735A601CA17B8300D59481 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC955D2E1B8CA3E700D33FD2 /* DevStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC955D321B8CA3E700D33FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC955D331B8CA3E700D33FD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,7 +150,8 @@
 				EC955D411B8CA3E700D33FD2 /* Images.xcassets */,
 				EC955D431B8CA3E700D33FD2 /* LaunchScreen.xib */,
 				EC955D311B8CA3E700D33FD2 /* Supporting Files */,
-				EC0D13E61B9DCC0000E70747 /* Constants.h */,
+				EC735A601CA17B8300D59481 /* Constants.swift */,
+				EC735A5F1CA17B8300D59481 /* DevStat-Bridging-Header.h */,
 			);
 			path = DevStat;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 		EC955D261B8CA3E700D33FD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Ian Field";
 				TargetAttributes = {
@@ -355,6 +359,7 @@
 				EC955D641B8CA55B00D33FD2 /* StatItem.m in Sources */,
 				EC0D13E51B9DC8B900E70747 /* CustomTabBarController.m in Sources */,
 				EC955D5F1B8CA48C00D33FD2 /* SoftwareStatisticsTableViewController.m in Sources */,
+				EC735A611CA17B8300D59481 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,10 +487,13 @@
 			baseConfigurationReference = 7E7E53062208BFBA2E1DB279 /* Pods-DevStat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DevStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ianfield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevStat/DevStat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -494,10 +502,12 @@
 			baseConfigurationReference = 18F473DD7F28A40983D96AA3 /* Pods-DevStat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DevStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ianfield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevStat/DevStat-Bridging-Header.h";
 			};
 			name = Release;
 		};

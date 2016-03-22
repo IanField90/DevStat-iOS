@@ -7,8 +7,8 @@
 //
 
 #import "CustomTabBarController.h"
-#import "Constants.h"
 #import "StatisticsHelper.h"
+#import "DevStat-Swift.h"
 #import <MNFloatingActionButton/MNFloatingActionButton.h>
 #import <MessageUI/MessageUI.h>
 
@@ -33,7 +33,7 @@ const CGFloat kFABDiameter = 50;
     // Do any additional setup after loading the view.
     
     self.button = [[MNFloatingActionButton alloc] init];
-    self.button.backgroundColor = kDSPurple;
+    self.button.backgroundColor = [Constants purple];
     self.button.centerImageView.image = [UIImage imageNamed:@"ic_share"];
     self.button.animationScale = 1.10f;
     
