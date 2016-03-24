@@ -10,4 +10,4 @@ SPEC CHECKSUMS:
   MNFloatingActionButton: 855acdbf1228f2e7c976dc36f45cb4d8ca2c5bde
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

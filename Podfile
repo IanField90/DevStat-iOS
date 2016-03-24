@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.3'
 
 target "DevStat" do
   pod 'Reachability', '~> 3.2'
