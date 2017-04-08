@@ -85,12 +85,15 @@ const CGFloat kFABDiameter = 50;
     
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-    mc.mailComposeDelegate = self;
-    [mc setSubject:emailTitle];
-    [mc setMessageBody:messageBody isHTML:NO];
     
-    // Present mail view controller on screen
-    [self presentViewController:mc animated:YES completion:NULL];
+    if (mc && [MFMailComposeViewController canSendMail]) {
+        mc.mailComposeDelegate = self;
+        [mc setSubject:emailTitle];
+        [mc setMessageBody:messageBody isHTML:NO];
+        
+        // Present mail view controller on screen
+        [self presentViewController:mc animated:YES completion:NULL];
+    }
 }
 
 

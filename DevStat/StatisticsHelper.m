@@ -164,19 +164,19 @@
     // This delegate method will monitor for any changes in bluetooth state and respond accordingly
     switch(_bluetoothManager.state)
     {
-        case CBCentralManagerStatePoweredOn:
+        case CBManagerStatePoweredOn:
             self.bluetoothState = @"Powered on";
             break;
-        case CBCentralManagerStatePoweredOff:
+        case CBManagerStatePoweredOff:
             self.bluetoothState = @"Powered off";
             break;
-        case CBCentralManagerStateResetting:
+        case CBManagerStateResetting:
             self.bluetoothState = @"Resetting";
             break;
-        case CBCentralManagerStateUnsupported:
+        case CBManagerStateUnsupported:
             self.bluetoothState = @"Unsupported";
             break;
-        case CBCentralManagerStateUnauthorized:
+        case CBManagerStateUnauthorized:
             self.bluetoothState = @"Unauthorized";
             break;
             
