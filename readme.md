@@ -2,7 +2,7 @@
 
 ![Icon](https://raw.githubusercontent.com/IanField90/DevStat-iOS/master/icon.png)
 
-Now that it appears that device fragmentation is growing on iOS devices I intend to replicate a similar approach as the Android version for iOS
+Now that it appears that device fragmentation is growing on iOS devices I intend to replicate a similar approach as the Android version for iOS.
 
 ## Statistics
 
